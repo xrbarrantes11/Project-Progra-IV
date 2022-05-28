@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xml:th="http://thymeleaf.org">
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="funciones.js"></script>
+    </head>
+    <body>
+        <h1>Bienvenido al Sistema de Matriculas!</h1>
+        <form th:action="@{/validar}" method="post">
+            Cedula: <input type="text" name="cedula"/> </br>
+            Contraseña: <input type="text" name="pass"/> </br>
+            <input type="submit" value="Ingresar"/>
+            <div id="contenedor"></div>
+        </form>  
+        <br>
+        <form action = "/registrarEstudiante">
+            <input type="button" value = "Registrar Estudiante"/><br/>
+            <div id="contenedor"></div>
+        </form>
+    </body>
+</html>
